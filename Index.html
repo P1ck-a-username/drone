@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Crash'n'Destroy Drone</title>
+    <script src="lib/jquery.js"></script>
+    <script src="lib/tracking-min.js"></script>
+    <script src="drone-frontend.js"></script>
+    <script src="utils/colorTrackerUtils.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+
+    <style>
+        img,
+        canvas {
+            position: absolute;
+        }
+    </style>
+</head>
+<body class="container">
+<h1 class="text-center">Crash'n'Destroy Drone</h1>
+    <div id="example" class="row">
+        <div class="col-md-8">
+            <!-- The Drone view -->
+            <img class="drone" src="snapshots/camera3.png" width="640" height="360"/>
+            <canvas class="canvas" width="640" height="360"></canvas>
+        </div>
+        <div class="col-md-4">
+            <h2>What do I see?</h2>
+            <div class="output">
+                Colours! Apparently.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

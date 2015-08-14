@@ -55,8 +55,8 @@ var TrackerUtils = (function() {
                     deltaG = gRatio / gRatio2;
 
                 return deltaColorTotal > 0.8 && deltaColorTotal < 1.2 &&
-                    deltaR > 0.8 && deltaR < 1.2 &&
-                    deltaG > 0.8 && deltaG < 1.2;
+                    deltaR > 0.6 && deltaR < 1.4 &&
+                    deltaG > 0.6 && deltaG < 1.4;
             });
         }
 
